@@ -134,7 +134,7 @@ cd Cafe-Couraca
    python manage.py migrate
    ```
 
-5. **Crie um superutilizador**:
+5. **Crie um superutilizador para aceder ao painel de administração**:
 
    ```bash
    python manage.py createsuperuser
