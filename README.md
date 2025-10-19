@@ -47,7 +47,6 @@ Sistema de gestão de reservas para o Café Couraça, desenvolvido como desafio 
 
 - Docker Compose
 - SSL auto-assinado para HTTPS local
-- CORS/CSRF protection
 
 ## Instalação
 
@@ -185,7 +184,6 @@ cd Cafe-Couraca
 4. **Reverse proxy da interface administrativa do Django (página do Staff)**
 5. **Rate Limiting das APIs criadas**
 6. **Hot Reload usando Vite**
-7. **CORS e CSRF**
 
 #### Frontend
 
