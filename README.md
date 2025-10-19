@@ -90,7 +90,7 @@ docker-compose down
 docker rm -f <id_do_container>
 ```
 
-A base de dados está montada como bind mount. Para gerir:
+**A base de dados está montada como bind mount. Para gerir:**
 
 **Listar volumes**:
 
