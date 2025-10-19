@@ -56,7 +56,7 @@ Sistema de gestão de reservas para o Café Couraça, desenvolvido como desafio 
 
    ```bash
    git clone https://github.com/CarlossOliveira/Cafe-Couraca
-   cd "Café Couraça"
+   cd Cafe-Couraca
    ```
 
 2. **Inicie os serviços**:
@@ -78,19 +78,13 @@ Sistema de gestão de reservas para o Café Couraça, desenvolvido como desafio 
 docker ps -a
 ```
 
-**Parar containers**:
+**Parar e remover containers**:
 
 ```bash
 docker-compose down
 ```
 
-**Remover containers**:
-
-```bash
-docker rm -f <id_do_container>
-```
-
-**A base de dados está montada como bind mount. Para gerir:**
+**A base de dados está montada como bind mount. Para gerir**:
 
 **Listar volumes**:
 
@@ -110,7 +104,7 @@ docker volume rm <nome_do_volume>
 
 ```bash
 git clone https://github.com/CarlossOliveira/Cafe-Couraca
-cd "Café Couraça"
+cd Cafe-Couraca
 ```
 
 #### Backend (Django)
