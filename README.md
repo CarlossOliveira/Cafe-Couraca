@@ -261,4 +261,4 @@ Por fim, estou ciente de que, apesar de o projeto ter sido disponibilizado atrav
 
 ---
 
-**Desenvlvido Por:** Carlos Oliveira
+**Desenvolvido Por:** Carlos Oliveira
