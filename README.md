@@ -6,6 +6,7 @@
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação](#instalação)
   - [Com Docker (Recomendado)](#com-docker-recomendado)
+    - [Gestão de Volumes e Containers Docker (Comandos Úteis)](#gestão-de-volumes-e-containers-docker-comandos-úteis)
   - [Instalação Local](#instalação-local)
     - [Backend (Django)](#backend-django)
     - [Frontend (React + Vite)](#frontend-react--vite)
