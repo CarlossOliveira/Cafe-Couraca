@@ -166,7 +166,7 @@ CORS_ALLOWED_ORIGINS = [
 # Permitir cookies de sessão entre domínios (necessário para autenticação)
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF Trusted Origins
+# CSRF Trusted Origins (Necessário para requests autenticadas do painel admin do Django exposto via reverse proxy do frontend)
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
