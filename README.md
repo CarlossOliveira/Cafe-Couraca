@@ -55,7 +55,7 @@ Sistema de gestão de reservas para o Café Couraça, desenvolvido como desafio 
 1. **Clone o repositório e navegue até à pasta do projeto**:
 
    ```bash
-   git clone <url-do-repositório>
+   git clone https://github.com/CarlossOliveira/Cafe-Couraca
    cd "Café Couraça"
    ```
 
@@ -109,7 +109,7 @@ docker volume rm <nome_do_volume>
 **Clone o repositório e navegue até à pasta do projeto**:
 
 ```bash
-git clone <url-do-repositório>
+git clone https://github.com/CarlossOliveira/Cafe-Couraca
 cd "Café Couraça"
 ```
 
