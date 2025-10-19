@@ -1,0 +1,48 @@
+# ================================================================================================
+# DEPENDÊNCIAS DO BACKEND - Django REST API
+# ================================================================================================
+# Este arquivo lista todas as bibliotecas Python necessárias para o projeto
+
+# ------------------------------------------------------------------------------------------------
+# FRAMEWORK PRINCIPAL
+# ------------------------------------------------------------------------------------------------
+Django==5.2.7                      # Framework web Python principal
+asgiref==3.10.0                    # Suporte ASGI para Django (requisições assíncronas)
+sqlparse==0.5.3                    # Parser SQL usado pelo Django para formatação de queries
+tzdata==2025.2                     # Base de dados de fusos horários
+
+# ------------------------------------------------------------------------------------------------
+# DJANGO REST FRAMEWORK & CORS
+# ------------------------------------------------------------------------------------------------
+djangorestframework==3.16.1        # Framework para criar APIs RESTful com Django
+django-cors-headers==4.9.0         # Permite requisições CORS (Cross-Origin) do frontend
+
+# ------------------------------------------------------------------------------------------------
+# AUTENTICAÇÃO & SEGURANÇA
+# ------------------------------------------------------------------------------------------------
+PyJWT==2.10.1                      # Biblioteca para gerar e validar tokens JWT (autenticação)
+cryptography==46.0.3               # Criptografia e funções de segurança
+pyOpenSSL==25.3.0                  # Bindings Python para OpenSSL (certificados SSL/TLS)
+cffi==2.0.0                        # Interface para chamar código C (usado por cryptography)
+pycparser==2.23                    # Parser C (dependência do cffi)
+
+# ------------------------------------------------------------------------------------------------
+# FERRAMENTAS DE DESENVOLVIMENTO
+# ------------------------------------------------------------------------------------------------
+django-extensions==4.1             # Extensões úteis para Django (shell_plus, runserver_plus, etc)
+django-sslserver==0.22             # Servidor HTTPS para desenvolvimento local
+Werkzeug==3.1.3                    # Ferramentas WSGI (usado por django-extensions)
+
+# ------------------------------------------------------------------------------------------------
+# REQUISIÇÕES HTTP & NETWORKING
+# ------------------------------------------------------------------------------------------------
+requests==2.32.5                   # Biblioteca para fazer requisições HTTP
+urllib3==2.5.0                     # Cliente HTTP (usado pelo requests)
+certifi==2025.10.5                 # Certificados SSL root para validar conexões HTTPS
+idna==3.11                         # Suporte para nomes de domínio internacionalizados (IDN)
+charset-normalizer==3.4.4          # Detecção automática de encoding de texto
+
+# ------------------------------------------------------------------------------------------------
+# TEMPLATES & RENDERIZAÇÃO
+# ------------------------------------------------------------------------------------------------
+MarkupSafe==3.0.3                  # Escapa strings HTML/XML de forma segura (usado pelo Jinja2)

@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    volumes:
+      - ./backend:/app
+      - backend_db:/app/data
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1 # Desativa o buffer de saída do Python para facilitar o logging default do Docker
+      - DJANGO_SETTINGS_MODULE=core.settings # Define o módulo de configurações do Django
+    networks:
+      - restaurant_network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules # Previne sobrescrita do node_modules
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=https://backend:8000
+    depends_on:
+      - backend
+    networks:
+      - restaurant_network
+    restart: unless-stopped
+
+networks:
+  restaurant_network:
+    driver: bridge
+
+volumes:
+  backend_db:
+  frontend_node_modules:
