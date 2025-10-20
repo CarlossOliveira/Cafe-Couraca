@@ -255,7 +255,7 @@ function ReservationForm({ closeForm }) {
           className="submitFormButton_AT_ReservationForm"
           onClick={() => {
             setShowForm(true);
-            //setFormData(default_formData);
+            setFormData(default_formData);
           }}
         >
           Fazer Outra Reserva
