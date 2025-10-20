@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // URL do backend Django:
 // Em Docker: usa o nome do serviço 'backend'
 // Em desenvolvimento local: usa localhost
-const BACKEND_URL = 'https://localhost:8000'; // Se fôr necessário modificar algum destes urls, modifique também em src/libraries/api.js para evitar erros
+const BACKEND_URL = process.env.VITE_API_URL || 'https://localhost:8000'; // Se fôr necessário modificar algum destes urls, modifique também em src/libraries/api.js para evitar erros
 
 // https://vite.dev/config/
 export default defineConfig({
