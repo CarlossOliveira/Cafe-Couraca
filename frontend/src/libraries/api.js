@@ -1,5 +1,5 @@
 // Prefer environment variable when available; fallback for local dev
-const BACKEND_URL = import.meta.env.VITE_API_URL || "https://localhost:8000";
+const BACKEND_URL = "https://localhost:8000";
 
 // ================================================================================================
 // FUNÇÕES PÚBLICAS (Não requerem autenticação)
