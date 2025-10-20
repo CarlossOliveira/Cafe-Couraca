@@ -1,5 +1,4 @@
-// Prefer environment variable when available; fallback for local dev
-const BACKEND_URL = 'https://localhost:8000';
+const BACKEND_URL = 'https://localhost:8000'; // Alternative: Use 'http://localhost:5173' to route through Vite proxy (WARNING: Proxy method requires CSRF token configuration in Django (currently not implemented))
 
 // ================================================================================================
 // FUNÇÕES PÚBLICAS (Não requerem autenticação)
